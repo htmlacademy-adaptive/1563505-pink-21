@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
 
-    <header class="page-header">
+    <header class="page-header header">
 
-      <a href="#" class="page__logo--header">
+      <a href="#" class="logo footer__logo">
         <img src="#" alt="Логотип сайта Пинк" width="74" height="23">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" name="nav-button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Переключение состояния меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">
                 Конкурс
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">
                 HTML Academy
               </a>
@@ -46,12 +47,12 @@
     <main class="page-main">
 
       <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
-      <section class="introduction">
+      <section class="promo">
         <h2 class="visually-hidden">Главный экран сайта</h2>
         <h3>Взгляните на жизнь иначе!</h3>
-        <div class="introduction-download">
+        <div class="download promo-download">
           <button class="download__button"type="button" name="botton-download">Скачать приложение</button>
-          <div class="download__stores">
+          <div class="stores download__stores">
             <ul class="stores__list">
               <li class="stores__item">
                 <a class="stores__link" href="#" aria-label="iOS">
@@ -82,41 +83,41 @@
         <h3 class="visually-hidden">Список преимуществ</h3>
         <ul class="features__list">
           <li class="features__item features__item--first">
-            <h3 class="features__item-title">Поднимает настроение</h3>
-            <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="features__header">Поднимает настроение</h3>
+            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="features__item features__item--second">
-            <h3 class="features__item-title">Меняет мир вокруг</h3>
-            <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+            <h3 class="features__header">Меняет мир вокруг</h3>
+            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="features__item features__item--third">
-            <h3 class="features__item-title">Заводит новых друзей</h3>
-            <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="features__header">Заводит новых друзей</h3>
+            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
-      <section class="reviews-slider">
+      <section class="reviews reviews-slider">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews-slider__slide reviews-slider__slide--current">
+        <div class="reviews__slide reviews-slider__slide--current">
           <blockquote class="reviews-slider__quote">
-            <p class="reviews-slider__quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
-          <p class="reviews-slider__author">Николай Петров</p>
-          <p class="reviews-slider__author-description">25 лет, водитель трамвая</p>
+          <p class="reviews__author">Николай Петров</p>
+          <p class="reviews__author-description">25 лет, водитель трамвая</p>
         </div>
-        <div class="reviews-slider__slider-controls">
-          <button class="reviews-slider__button slider-controls__button--current" type="button" aria-label="1">
+        <div class="reviews__slider-controls slider-controls">
+          <button class="reviews__button slider-controls slider-controls__button--current" type="button" aria-label="Слайд 1">
           </button>
-          <button class="reviews-slider__button" type="button" aria-label="2">
+          <button class="reviews__button slider-controls" type="button" aria-label="Слайд 2">
           </button>
-          <button class="reviews-slider__button" type="button" aria-label="3">
+          <button class="reviews__button slider-controls" type="button" aria-label="Слайд 3">
           </button>
         </div>
       </section>
       <section class="prices">
         <h2 class="visually-hidden">Стоимость приложения</h2>
         <div class="prices__slider">
-          <table class="prices__table table-prices">
+          <table class="table table-prices">
             <thead>
               <tr>
                 <th class="table-prices__header">
@@ -193,11 +194,11 @@
             </tbody>
           </table>
           <div class="prices__slider-controls slider-controls">
-            <button class="slider-controls__button" type="button" aria-label="1">
+            <button class="slider-controls__button" type="button" aria-label="Слайд 1">
             </button>
-            <button class="slider-controls__button slider-controls__button--current" type="button" aria-label="2">
+            <button class="slider-controls__button slider-controls__button--current" type="button" aria-label="Слайд 2">
             </button>
-            <button class="slider-controls__button" type="button" aria-label="3">
+            <button class="slider-controls__button" type="button" aria-label="Слайд 3">
             </button>
           </div>
         </div>
@@ -207,21 +208,21 @@
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
         <dl class="contacts__list">
           <div class="contacts__item contacts__item--phone">
-            <dt class="contacts__list-term">Звоните:</dt>
-            <dd class="contacts__list-description">
-              <a class="contacts__list-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <dt class="contacts__term">Звоните:</dt>
+            <dd class="contacts__description">
+              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </dd>
           </div>
           <div class="contacts__item contacts__item--email">
-            <dt class="contacts__list-term">Пишите:</dt>
-            <dd class="contacts__list-description">
-              <a class="contacts__list-link" href="#">mail@htmlacademy.ru</a>
+            <dt class="contacts__term">Пишите:</dt>
+            <dd class="contacts__description">
+              <a class="contacts__link" href="#">mail@htmlacademy.ru</a>
             </dd>
           </div>
           <div class="contacts__item contacts__item--address">
-            <dt class="contacts__list-term">Приезжайте в гости:</dt>
-            <dd class="contacts__list-description">
-              <address class="contacts__list-address">ул. Большая Конюшенная, 19/8</address>
+            <dt class="contacts__term">Приезжайте в гости:</dt>
+            <dd class="contacts__description">
+              <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
             </dd>
           </div>
         </dl>
@@ -233,22 +234,22 @@
     <footer class="page-footer page-footer--index">
 
       <div class="page-footer__wrapper">
-        <a class="page__logo--footer" aria-label="Логотип сайта Pink">
+        <a class="logo header__logo" aria-label="Логотип сайта Pink">
           <img src="#" alt="Логотип сайта Пинк" width="74" height="23">
         </a>
-        <ul class="social-links__list">
-          <li class="social-links__item">
-            <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
+        <ul class="socials footer_socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://twitter.com" aria-label="Twitter">
               <img src="#" alt="Иконка Твиттер" width="48" height="48">
             </a>
           </li>
-          <li class="social-links__item">
-            <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.facebook.com" aria-label="Facebook">
               <img src="#" alt="Иконка Фейсбук" width="48" height="48">
             </a>
           </li>
-          <li class="social-links__item">
-            <a class="social-links__link" href="https://www.youtube.com" aria-label="Youtube">
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.youtube.com" aria-label="Youtube">
               <img src="#" alt="Иконка Ютуб" width="48" height="48">
             </a>
           </li>
@@ -264,4 +265,5 @@
     </footer>
 
   </body>
+
 </html>
