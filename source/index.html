@@ -7,9 +7,9 @@
   </head>
   <body class="page__body">
 
-    <header class="page-header header">
+    <header class="page__header header">
 
-      <a href="#" class="logo footer__logo">
+      <a href="#" class="logo header__logo">
         <img src="#" alt="Логотип сайта Пинк" width="74" height="23">
       </a>
       <nav class="main-nav">
@@ -50,7 +50,7 @@
       <section class="promo">
         <h2 class="visually-hidden">Главный экран сайта</h2>
         <h3>Взгляните на жизнь иначе!</h3>
-        <div class="download promo-download">
+        <div class="download promo__download">
           <button class="download__button"type="button" name="botton-download">Скачать приложение</button>
           <div class="stores download__stores">
             <ul class="stores__list">
@@ -96,28 +96,28 @@
           </li>
         </ul>
       </section>
-      <section class="reviews reviews-slider">
+      <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__slide reviews-slider__slide--current">
-          <blockquote class="reviews-slider__quote">
+        <div class="reviews__slide reviews__slide--current">
+          <blockquote class="reviews__quote">
             <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
           <p class="reviews__author">Николай Петров</p>
           <p class="reviews__author-description">25 лет, водитель трамвая</p>
         </div>
-        <div class="reviews__slider-controls slider-controls">
-          <button class="reviews__button slider-controls slider-controls__button--current" type="button" aria-label="Слайд 1">
+        <div class="reviews__slider-controls">
+          <button class="reviews__button reviews__button--current" type="button" aria-label="Слайд 1">
           </button>
-          <button class="reviews__button slider-controls" type="button" aria-label="Слайд 2">
+          <button class="reviews__button" type="button" aria-label="Слайд 2">
           </button>
-          <button class="reviews__button slider-controls" type="button" aria-label="Слайд 3">
+          <button class="reviews__button" type="button" aria-label="Слайд 3">
           </button>
         </div>
       </section>
       <section class="prices">
         <h2 class="visually-hidden">Стоимость приложения</h2>
         <div class="prices__slider">
-          <table class="table table-prices">
+          <table class="prices__table table">
             <thead>
               <tr>
                 <th class="table-prices__header">
@@ -231,10 +231,10 @@
 
     </main>
 
-    <footer class="page-footer page-footer--index">
+    <footer class="page-footer page-footer--index footer">
 
       <div class="page-footer__wrapper">
-        <a class="logo header__logo" aria-label="Логотип сайта Pink">
+        <a class="logo footer__logo" aria-label="Логотип сайта Pink">
           <img src="#" alt="Логотип сайта Пинк" width="74" height="23">
         </a>
         <ul class="socials footer_socials">
