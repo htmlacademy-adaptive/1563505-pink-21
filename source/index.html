@@ -5,7 +5,10 @@
 
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
@@ -51,10 +54,12 @@
 
       <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
       <section class="promo">
-        <h2 class="visually-hidden">Главный экран сайта</h2>
-        <h3>Взгляните на жизнь иначе!</h3>
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden">Главный экран сайта</h2>
+          <h3 class="promo__headline">Взгляните на жизнь иначе!</h3>
+        </div>
         <div class="download promo__download">
-          <button class="download__button"type="button" name="botton-download">Скачать приложение</button>
+          <button class="download__button"type="button" name="button-download">Скачать приложение</button>
           <div class="stores download__stores">
             <ul class="stores__list">
               <li class="stores__item">
@@ -79,7 +84,7 @@
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="features__text">
+        <div class="features__headline">
           <span>Устали от серости мегаполиса?</span>
           <span>Нам есть, что вам предложить!</span>
         </div>
@@ -105,10 +110,10 @@
           <blockquote class="reviews__quote">
             <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
-          <p class="reviews__author">Николай Петров</p>
+          <h3 class="reviews__author">Николай Петров</h3>
           <p class="reviews__author-description">25 лет, водитель трамвая</p>
         </div>
-        <div class="reviews__slider-controls">
+        <div class="reviews__controls">
           <button class="reviews__button reviews__button--current" type="button" aria-label="Слайд 1">
           </button>
           <button class="reviews__button" type="button" aria-label="Слайд 2">
@@ -123,8 +128,6 @@
           <table class="prices__table table">
             <thead>
               <tr>
-                <th class="table__header">
-                </th>
                 <th class="table__header">
                   <span class="table__license-type">База</span>
                   <span class="table__license-price">1,99 USD</span>
@@ -196,7 +199,7 @@
               </tr>
             </tbody>
           </table>
-          <div class="prices__slider-controls slider-controls">
+          <div class="prices__controls slider-controls">
             <button class="slider-controls__button" type="button" aria-label="Слайд 1">
             </button>
             <button class="slider-controls__button slider-controls__button--current" type="button" aria-label="Слайд 2">
