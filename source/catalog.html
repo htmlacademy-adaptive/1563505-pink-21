@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
   <head>
 
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
 
   <body class="page__body">
 
-    <header class="page-header header">
+    <header class="page__header header">
 
-      <a href="#" class="logo footer__logo">
+      <a href="#" class="logo header__logo">
         <img src="#" alt="Логотип сайта Пинк" width="74" height="23">
       </a>
       <nav class="main-nav">
@@ -49,12 +53,17 @@
 
     <main class="page-catalog">
 
-      <div class="page-catalog__title-wrapper">
-        <h1 class="page-catalog__title">Фотографии<br>пользователей</h1>
-      </div>
-      <p class="page-catalog__headline">Взгляните на фотографии, которые выкладывают пользователи!&thinsp;</p>
+      <h1 class="visually-hidden">Каталог фотографий Pink</h1>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden"></h2>
+          <!-- Не забыть про line-height у формы и каталога -->
+          <h3 class="promo__headline">Фотографии<br>пользователей</h3>
+        </div>
+      </section>
       <section class="gallery">
         <h2 class="visually-hidden">Галерея пользователей Pink</h2>
+        <p class="gallery__headline">Взгляните на фотографии, которые выкладывают пользователи!&thinsp;</p>
         <figure class="photo">
           <a class="photo__link" href="#">
             <img class="photo__image" src="#" alt="Панорама дня">
@@ -206,8 +215,8 @@
                 </div>
               </div>
               <div class="form-photo__buttons">
-                <button class="form-photo__button button" type="submit">Запостить</button>
-                <button class="form-photo__button button" type="reset">Отмена</button>
+                <button class="form-photo__button button" type="submit"><span class="form-photo__button--submit">Запостить</span></button>
+                <button class="form-photo__button button" type="reset"><span class="form-photo__button--reset">Отмена</span></button>
               </div>
             </div>
           </form>
@@ -216,13 +225,13 @@
 
     </main>
 
-    <footer class="page-footer page-footer--catalog">
+    <footer class="footer page__footer page__footer--index">
 
-      <div class="page-footer__wrapper">
-        <a class="logo header__logo" aria-label="Логотип сайта Pink">
+      <div class="footer__wrapper">
+        <a class="logo footer__logo" aria-label="Логотип сайта Pink">
           <img src="#" alt="Логотип сайта Пинк" width="74" height="23">
         </a>
-        <ul class="socials footer_socials">
+        <ul class="socials footer__socials">
           <li class="socials__item">
             <a class="socials__link" href="https://twitter.com" aria-label="Twitter">
               <img src="#" alt="Иконка Твиттер" width="48" height="48">
