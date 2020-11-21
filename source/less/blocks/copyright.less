@@ -1,6 +1,25 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 155px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+}
 .copyright__text {
+  margin-right: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @dark-blue;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 13px;
+  }
+}
+.copyright__link {
+  display: block;
+  color: @pink;
 }

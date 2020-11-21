@@ -1,4 +1,13 @@
 .header {
-  background-color: @black;
-  opacity: 0.3;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.header__logo {
+  height: 23px;
+  @media (min-width: @tablet-width) {
+    height: 40px;
+  }
+  @media (min-width: @desktop-width) {
+    height: 40px;
+  }
 }

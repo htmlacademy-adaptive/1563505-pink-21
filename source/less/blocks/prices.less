@@ -1,0 +1,26 @@
+.prices {
+  padding-top: 91px;
+  padding-bottom: 32px;
+  background-color: @silver;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 86px;
+    padding-bottom: 69px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 150px;
+    padding-bottom: 95px;
+  }
+}
+.prices__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    left: auto;
+    transform: none;
+  }
+}

@@ -1,7 +1,43 @@
+.reviews {
+  position: relative;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  text-align: center;
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 185px;
+    padding-bottom: 40px;
+  }
+}
+.reviews__slide {
+  display: flex;
+  flex-direction: column;
+}
 .reviews__author {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+.reviews__author-description {
+  display: none;
+  @media (min-width: @tablet-width) {
+    order: 3;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 .reviews__quote {
   font-weight: 400;
