@@ -1,5 +1,58 @@
+.photo {
+  min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  .photo--full {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: auto;
+    max-width: 320px;
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+      max-width: 700px;
+    }
+    @media (min-width: @desktop-width) {
+      max-width: 1200px;
+    }
+  }
+}
 .photo__content {
   background-color: @silver;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 18px 17px 21px;
+
+  @media (min-width: @tablet-width) {
+    padding: 23px 32px 24px 27px;
+  }
+  .photo__content--full {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 280px;
+
+    @media (min-width: @tablet-width) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 24px 29px 13px 27px;
+      width: 620px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 24px 32px 12px 27px;
+      width: 940px;
+    }
+  }
+}
+.photo__author {
+  margin: 0;
 }
 .photo__author-name {
   font-weight: 700;
@@ -12,19 +65,60 @@
   font-size: 12px;
   line-height: 24px;
   color: @dark-blue;
+  margin-left: 5px;
 }
 .photo__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: @dark-blue;
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 12px;
+    min-height: 48px;
+  }
+  .photo__text--full {
+    @media (min-width: @tablet-width) {
+      order: 2;
+      min-height: auto;
+    }
+  }
+}
+.photo__likes {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .photo__likes--full {
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
+  }
 }
 .photo__like-button {
-  background-color: @pink;
+  display: block;
+  padding: 0;
+  width: 13px;
+  height: 12px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 .photo__like-count {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   color: @pink;
+  margin-left: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 17px;
+  }
 }
