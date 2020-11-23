@@ -1,5 +1,18 @@
 .download {
+  display: block;
   background-color: @dark-blue;
+  margin: 0 auto;
+  padding-top: 28px;
+  min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 93px;
+    padding-bottom: 110px;
+    min-width: 620px;
+  }
+  @media @desktop-width {
+    min-width: 940px;
+  }
 }
 .download__button {
   background-color: @dark-blue;
@@ -7,6 +20,12 @@
   font-weight: 700;
   line-height: 18px;
   color: @white;
+  border-color: @white;
+  margin-left: 40px;
+
+  @media @desktop-width {
+    font-size: 21px;
+  }
 }
 .download__stores {
   background-color: @dark-blue;

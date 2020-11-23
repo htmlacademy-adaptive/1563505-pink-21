@@ -4,11 +4,13 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body class="page__body">
@@ -56,7 +58,7 @@
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="visually-hidden">Главный экран сайта</h2>
-          <h3 class="promo__headline">Взгляните на жизнь иначе!</h3>
+          <h3 class="promo__headline">Взгляните на жизнь<br>иначе!</h3>
         </div>
         <div class="download promo__download">
           <button class="download__button"type="button" name="button-download">Скачать приложение</button>
@@ -85,8 +87,8 @@
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="features__headline">
-          <span>Устали от серости мегаполиса?</span>
-          <span>Нам есть, что вам предложить!</span>
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить!</p>
         </div>
         <h3 class="visually-hidden">Список преимуществ</h3>
         <ul class="features__list">
@@ -104,14 +106,26 @@
           </li>
         </ul>
       </section>
+      <section class="efficiency">
+        <div class="efficiency__wrapper">
+          <div class="efficiency__image">
+            <span class="efficiency__image-text">24</span>
+          </div>
+          <div class="efficiency__description">
+            <h2 class="efficiency__title">Эффект на&nbsp;24 часа!</h2>
+            <p class="efficiency__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
+            <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__slide reviews__slide--current">
+          <h3 class="reviews__author">Николай Петров</h3>
+          <p class="reviews__author-description">25 лет, водитель трамвая</p>
           <blockquote class="reviews__quote">
             <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
           </blockquote>
-          <h3 class="reviews__author">Николай Петров</h3>
-          <p class="reviews__author-description">25 лет, водитель трамвая</p>
         </div>
         <div class="reviews__controls">
           <button class="reviews__button reviews__button--current" type="button" aria-label="Слайд 1">
