@@ -9,6 +9,7 @@
 .table__header {
   background-color: @dark-blue;
   color: @white;
+  border-right: 2px solid @lightgray;
   position: relative;
   padding-top: 17px;
   padding-bottom: 21px;
@@ -26,9 +27,13 @@
     border-right: 0;
     border-bottom: 2px solid @lightgray;
     background-color: transparent;
+
     @media (min-width: @tablet-width) {
       display: table-cell;
     }
+  }
+  .table__header:last-child {
+    border-right-color: @dark-blue
   }
 }
 .table__license-type {
@@ -42,6 +47,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
   }
@@ -59,6 +65,7 @@
   line-height: 30px;
   color: @dark-blue;
   background-color: @white;
+
   @media (min-width: @tablet-width) {
     padding: 7px 20px 8px;
     width: 25%;
@@ -66,9 +73,10 @@
   @media (min-width: @desktop-width) {
     padding: 14px 20px 15px;
   }
-  .table__cell:last-child {
+  .table__cell:first-child {
     display: none;
     border-left: 2px solid @lightgray;
+
     @media (min-width: @tablet-width) {
       display: table-cell;
       padding-left: 14px;
@@ -88,8 +96,6 @@
   align-items: center;
   @media (min-width: @tablet-width) {
     justify-content: center;
-  }
-  @media (min-width: @desktop-width) {
   }
 }
 .table__feature-value {
