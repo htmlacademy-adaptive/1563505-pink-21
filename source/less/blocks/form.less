@@ -19,6 +19,7 @@
   }
   @media (min-width: @desktop-width) {
     padding-bottom: 49px;
+    margin: 0 auto;
   }
 }
 .form__headline {
@@ -27,8 +28,8 @@
   line-height: 30px;
   color: @dark-blue;
   margin: 0 auto;
-  max-width: 500px;
   line-height: 30px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -47,7 +48,6 @@
   @media (min-width: @desktop-width) {
     padding-top: 36px;
     padding-bottom: 30px;
-    min-width: 434px;
   }
 }
 .form__achievments-wrapper {
@@ -131,6 +131,49 @@
     padding: 0;
     border: 2px solid @lightgray;
     border-radius: 2px;
+  }
+  .form__fieldset--name {
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+  .form__fieldset--achivments {
+    padding-top: 38px;
+    padding-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+      padding: 52px 58px 49px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 52px 8px 13px 58px;
+    }
+  }
+  .form__fieldset--contacts {
+    @media (min-width: @tablet-width) {
+      padding: 46px 58px 26px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 43px 58px 13px;
+    }
+  }
+  .form__fieldset--platform {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    @media (min-width: @tablet-width) {
+      padding: 52px 58px 55px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 54px 50px 56px 74px;
+      width: auto;
+    }
+  }
+  .form__fieldset--emotions {
+    @media (min-width: @tablet-width) {
+      padding: 46px 58px 51px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 43px 58px 43px;
+    }
   }
 }
 .form__name-item {
@@ -219,6 +262,31 @@
     top: 0;
     transform: translateY(-50%);
     padding: 0;
+  }
+  .form__legend--contacts {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+}
+.form__legend-text {
+  @media (min-width: @tablet-width) {
+    display: inline-flex;
+    background-color: @white;
+  }
+  .form__legend-text::before,
+  .form__legend-text::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+    }
+  }
+  .form__legend-text::before {
+    margin-right: 30px;
+  }
+  .form__legend-text::after {
+    margin-left: 30px;
   }
 }
 .form__label-checkbox {

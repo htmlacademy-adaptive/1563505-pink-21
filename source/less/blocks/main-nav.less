@@ -1,21 +1,93 @@
+.main-nav {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
 .main-nav__list {
   padding: 0;
   margin: 0;
+  border-top: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    border-top: 0;
+    line-height: 18px;
+  }
 }
-.main-nav__item a {
+.main-nav__item {
+  position: relative;
+  border-top: 1px solid fade(@white, 15%);
+  border-bottom: 1px solid @black;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+  }
+  .main-nav__item:not(:nth-child(4n+4)) {
+    @media (min-width: @desktop-width) {
+      margin-right: 10px;
+    }
+  }
+}
+.main-nav__link {
   text-transform: uppercase;
   text-decoration: none;
   color: @white;
   font-size: 18px;
   line-height: 32px;
-}
-@media (min-width: @desktop-width) {
-  .main-nav__list {
-    display: flex;
-    justify-content: space-around;
-    min-width: 620px;
+  display: block;
+  padding: 15px 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 89px;
+    margin-right: 20px;
+    padding: 0;
+    font-weight: 400;
+    text-transform: none;
+    }
+  .main-nav__link:not([href])::after {
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: @white;
+    }
   }
-  .main-nav__toggle {
+}
+.main-nav__toggle {
+  position: relative;
+  align-self: flex-end;
+  padding: 0;
+  border: 0;
+  width: 50px;
+  height: 24px;
+  color: @white;
+  background-color: transparent;
+
+@media (min-width: @desktop-width) {
     display: none;
+  }
+  .main-nav__toggle::before,
+  .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    width: 28px;
+    height: 4px;
+    background-color: currentColor;
+  }
+  .main-nav__toggle::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .main-nav__toggle::after {
+    transform: translateY(-50%) rotate(-45deg);
   }
 }
