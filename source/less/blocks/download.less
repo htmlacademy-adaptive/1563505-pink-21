@@ -1,16 +1,15 @@
 .download {
   display: block;
   background-color: @dark-blue;
-  margin: 0 auto;
   padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     padding-top: 93px;
     padding-bottom: 110px;
-    min-width: 620px;
+    width: 620px;
   }
   @media @desktop-width {
-    min-width: 940px;
+    width: 940px;
   }
 }
 .download__button {
@@ -31,9 +30,16 @@
   border-radius: 30px;
   line-height: 18px;
   background-color: transparent;
+  margin: 0 auto;
+  max-width: 100%;
 
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
   @media @desktop-width {
     font-size: 21px;
+    width: 300px;
   }
 }
 .download__stores {
