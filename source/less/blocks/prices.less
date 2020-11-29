@@ -1,5 +1,5 @@
 .prices {
-  padding-top: 91px;
+  padding-top: 100px;
   padding-bottom: 32px;
   background-color: @silver;
 
@@ -9,7 +9,7 @@
   }
   @media (min-width: @desktop-width) {
     padding-top: 150px;
-    padding-bottom: 95px;
+    padding-bottom: 95px
   }
 }
 .prices__slider {
@@ -26,10 +26,13 @@
     position: static;
     left: auto;
     transform: none;
+    @media (min-width: @desktop-width) {
+      margin-left: 110px;
+    }
   }
 }
 .prices__controls {
-  margin-top: 40px;
+  margin-top: 52px;
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
