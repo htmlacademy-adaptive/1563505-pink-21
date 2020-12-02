@@ -1,6 +1,6 @@
 .prices {
-  padding-top: 100px;
-  padding-bottom: 32px;
+  padding-top: 105px;
+  padding-bottom: 38px;
   background-color: @silver;
 
   @media (min-width: @tablet-width) {
@@ -15,10 +15,18 @@
 .prices__slider {
   overflow: hidden;
   text-transform: uppercase;
+  padding-top: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
 .prices__table {
   position: relative;
-  left: 50%;
+  left: 33%;
   transform: translateX(-50%);
   transition: left 0.4s linear;
 
@@ -27,7 +35,7 @@
     left: auto;
     transform: none;
     @media (min-width: @desktop-width) {
-      margin-left: 110px;
+      margin-left: 0;
     }
   }
 }

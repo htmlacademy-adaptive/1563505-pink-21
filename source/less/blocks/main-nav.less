@@ -1,13 +1,13 @@
 .main-nav {
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 .main-nav_logo-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
@@ -42,28 +42,25 @@
     padding: 0;
     border: 0;
   }
-  .main-nav__item:not(:nth-child(4n+4)) {
-    @media (min-width: @desktop-width) {
-      margin-right: 30px;
-    }
-  }
 }
 .main-nav__link {
   text-transform: uppercase;
   text-decoration: none;
   color: @white;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   display: block;
   padding: 15px 20px;
 
   @media (min-width: @desktop-width) {
-    margin-left: 83px;
-
+    margin-left: 50px;
     padding: 0;
     font-weight: 400;
     text-transform: none;
     }
+  }
   .main-nav__link:not([href])::after {
     @media (min-width: @desktop-width) {
       content: "";
@@ -74,6 +71,10 @@
       height: 2px;
       background-color: @white;
     }
+  }
+.main-nav__link:first-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 30px;
   }
 }
 .main-nav__toggle {
