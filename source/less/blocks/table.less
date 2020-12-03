@@ -1,5 +1,5 @@
 .table {
-  width: 940px;
+  width: 900px;
   border-spacing: 0;
 
   @media (min-width: @tablet-width) {
@@ -22,19 +22,19 @@
     padding-top: 16px;
     padding-bottom: 22px;
   }
-  .table__header--first {
-    display: none;
-    border-right: 0;
-    border-bottom: 2px solid @lightgray;
-    background-color: transparent;
+}
+.table__header--first {
+  display: none;
+  border-right: 0;
+  border-bottom: 2px solid @lightgray;
+  background-color: transparent;
 
-    @media (min-width: @tablet-width) {
-      display: table-cell;
-    }
+  @media (min-width: @tablet-width) {
+    display: table-cell;
   }
-  .table__header:last-child {
-    border-right-color: @dark-blue
-  }
+}
+.table__header:last-child {
+  border-right-color: @dark-blue
 }
 .table__license-type {
   display: block;
@@ -56,7 +56,7 @@
   }
 }
 .table__cell {
-  padding: 15px 18px 14px 22px;
+  padding: 15px 10px 10px 22px;
   border-right: 2px solid @lightgray;
   border-bottom: 2px solid @lightgray;
   text-transform: uppercase;
@@ -76,21 +76,21 @@
     padding: 14px 20px 15px;
     font-size: 18px;
   }
-  .table__cell:first-child {
-    display: none;
-    border-left: 2px solid @lightgray;
+}
+.table__cell:first-child {
+  display: none;
+  border-left: 2px solid @lightgray;
 
-    @media (min-width: @tablet-width) {
-      display: table-cell;
-      padding-left: 14px;
-      padding-right: 14px;
-      text-transform: none;
-    }
-    @media (min-width: @desktop-width) {
-      padding-left: 21px;
-      padding-right: 21px;
-      font-size: 18px;
-    }
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-transform: none;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 21px;
+    padding-right: 21px;
+    font-size: 18px;
   }
 }
 .table__cell--mobile {
@@ -117,14 +117,14 @@
 }
 .table__feature-value {
   display: block;
-  .table__feature-value--true {
-    width: 31px;
-    height: 23px;
-  }
-  .table__feature-value--false {
-    width: 27px;
-    height: 27px;
-  }
+}
+.table__feature-value--true {
+  width: 31px;
+  height: 23px;
+}
+.table__feature-value--false {
+  width: 36px;
+  height: 27px;
 }
 .table__feature-value--mobile {
   @media (min-width: @tablet-width) {
