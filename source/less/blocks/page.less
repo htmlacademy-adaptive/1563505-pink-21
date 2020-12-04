@@ -1,28 +1,18 @@
 .page {
   height: 100%;
 }
-.page__container {
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    min-width: 660px;
-  }
-  @media (min-width: @desktop-width) {
-    min-width: 980px;
-  }
-}
 .page__body {
+  margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 300;
   color: @black;
   background-color: @white;
-
 }
 .page__header {
-  background-color: @black;
-  opacity: 0.3;
+  position: relative;
+}
+.page__main-nav {
+  background-color: @dark-blue;
 }
