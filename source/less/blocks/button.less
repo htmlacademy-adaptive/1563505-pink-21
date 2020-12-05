@@ -8,3 +8,20 @@
   text-decoration: none;
   cursor: pointer;
 }
+.button--square {
+  padding: 16px 15px;
+  width: 100%;
+  border-radius: 2px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.button--green {
+  color: @white;
+  background-color: @green;
+}
+.button--green:hover {
+  background-color: @dark-green;
+}
+.button--green:active {
+  color: fade(@white, 30%);
+}

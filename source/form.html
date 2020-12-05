@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Пинк</title>
-  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
-</head>
+  </head>
 
-<body class="page__body">
+  <body class="page__body">
 
-    <header class="page__header header container">
+      <header class="page__header header">
 
-      <nav class="page__main-nav main-nav">
-        <div class="main-nav_logo-wrapper">
-          <a href="#" class="logo header__logo" aria-label="Логотип сайта Pink">
-          </a>
-        </div>
-        <button class="main-nav__toggle" type="button" name="nav-button">
-          <span class="visually-hidden">Переключение состояния меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="page__main-nav main-nav">
+          <div class="main-nav_logo-wrapper">
+            <a href="#" class="logo header__logo" aria-label="Логотип сайта Pink">
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button" name="nav-button">
+            <span class="visually-hidden">Переключение состояния меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active" href="#">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <h1 class="visually-hidden">Страница формы сайта приложения Pink</h1>
+        <section class="promo-inner">
+          <div class="promo-inner__wrapper">
+            <h2 class="visually-hidden">Экран формы</h2>
+            <h3 class="promo-inner__headline">Конкурс на самое безбашенное путешествие с Пинк</h3>
+          </div>
+        </section>
 
     </header>
 
     <main class="page-form">
-      <h1 class="visually-hidden">Страница формы сайта приложения Pink</h1>
-      <section class="promo-inner">
-        <div class="promo-inner__wrapper">
-          <h2 class="visually-hidden">Экран формы</h2>
-          <h3 class="promo-inner__headline">Конкурс на самое безбашенное путешествие с Пинк</h3>
-        </div>
-      </section>
+
       <form class="form form__feedback" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__headline-wrapper">
           <p class="form__headline">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!&thinsp;<span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span></p>
         </div>
-        <div class="form__wrapper form__name-wrapper">
+        <div class="form__wrapper form__name-wrapper container">
           <fieldset class="form__fieldset form__fieldset--name">
             <ul class="form__list">
               <li class="form__name-item">
@@ -86,7 +88,7 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__wrapper form__achievments-wrapper">
+        <div class="form__wrapper form__achievments-wrapper container">
           <fieldset class="form__fieldset form__fieldset--achivments">
             <legend class="form__legend">
               <span class="form__legend-text">Ваши безбашенные достижения в путешествии</span>
@@ -119,10 +121,10 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__wrapper form__contacts-wrapper">
+        <div class="form__wrapper form__contacts-wrapper container">
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__legend">
-              <span class="form__legend-text form__legend--contacts">Контактная информация</span>
+            <legend class="form__legend form__legend--contacts">
+              <span class="form__legend-text">Контактная информация</span>
             </legend>
             <ul class="form__list form__list--row">
               <li class="form__name-item form__name-item--contacts form__name-item--phone">
@@ -136,9 +138,9 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__wrapper form__platform-wrapper">
+        <div class="form__wrapper form__platform-wrapper container">
           <fieldset class="form__fieldset form__fieldset--platform">
-            <legend class="form__legend">
+            <legend class="form__legend form__legend--platform">
               <span class="form__legend-text">С каким приложением путешествовали?</span>
             </legend>
             <ul class="form__list">
@@ -157,7 +159,7 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__wrapper form__emotions-wrapper">
+        <div class="form__wrapper form__emotions-wrapper container">
           <fieldset class="form__fieldset form__fieldset--emotions">
             <legend class="form__legend">
               <span class="form__legend-text">Опишите свои эмоции</span>
@@ -166,7 +168,7 @@
           </fieldset>
         </div>
         <div class="form__wrapper form__submit-wrapper">
-          <button class="form__button button" type="submit">Отправить форму</button>
+          <button class="form__button button button--square button--green" type="submit">Отправить форму</button>
           <p class="form__note">
             <span class="form__splat">*</span>&thinsp;—обязательные<span class="form__attention">&thinsp;для заполнения</span>&thinsp;поля
           </p>
