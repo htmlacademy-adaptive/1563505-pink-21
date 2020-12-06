@@ -4,7 +4,11 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,35 +18,35 @@
 
   <body class="page__body">
 
-    <div class="page__container">
-
       <header class="page__header header">
 
-        <a href="#" class="logo header__logo">
-        </a>
-        <nav class="main-nav">
+        <nav class="page__main-nav main-nav">
+          <div class="main-nav_logo-wrapper">
+            <a href="#" class="logo header__logo" aria-label="Логотип сайта Pink">
+            </a>
+          </div>
           <button class="main-nav__toggle" type="button" name="nav-button">
             <span class="visually-hidden">Переключение состояния меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="#">
+                <a class="main-nav__link" href="index.html">
                   Главная
                 </a>
               </li>
-              <li class="main-nav__item">
-                <a href="#">
+              <li class="main-nav__item main-nav__link--active">
+                <a class="main-nav__link" href="#">
                   Фотографии
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="#">
+                <a class="main-nav__link" href="form.html">
                   Конкурс
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="#">
+                <a class="main-nav__link" href="https://htmlacademy.ru">
                   HTML Academy
                 </a>
               </li>
@@ -52,29 +56,30 @@
 
       </header>
 
+      <h1 class="visually-hidden">Каталог фотографий Pink</h1>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden"></h2>
+          <!-- Не забыть про line-height у формы и каталога -->
+          <h3 class="promo__headline">Фотографии<br>пользователей</h3>
+        </div>
+      </section>
+
       <main class="page-catalog">
 
-        <h1 class="visually-hidden">Каталог фотографий Pink</h1>
-        <section class="promo">
-          <div class="promo__wrapper">
-            <h2 class="visually-hidden"></h2>
-            <!-- Не забыть про line-height у формы и каталога -->
-            <h3 class="promo__headline">Фотографии<br>пользователей</h3>
-          </div>
-        </section>
-        <section class="gallery">
+        <section class="gallery container">
           <h2 class="visually-hidden">Галерея пользователей Pink</h2>
           <p class="gallery__headline">Взгляните на фотографии, которые выкладывают пользователи!&thinsp;</p>
-          <figure class="photo">
-            <a class="photo__link" href="#">
+          <figure class="photo photo--full">
+            <a class="photo__link photo__link--full" href="#">
             </a>
-            <figcaption class="photo__content">
+            <figcaption class="photo__content photo__content--full">
               <p class="photo__author">
                 <b class="photo__author-name">Анна</b>
                 <time class="photo__date" datetime="2017-09-22T19:00">(5 минут назад)</time>
               </p>
-              <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="photo__likes">
+              <p class="photo__text photo__text--full">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="photo__likes photo__likes--full">
                 <button class="photo__like-button" type="button" aria-label="Нравится"></button>
                 <span class="photo__like-count">Нравится: 215</span>
               </div>
