@@ -105,6 +105,22 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+  .main-nav__toggle::before,
+  .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    width: 28px;
+    height: 4px;
+    background-color: currentColor;
+  }
+  .main-nav__toggle::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .main-nav__toggle::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
 .main-nav__toggle::before,
 .main-nav__toggle::after {
