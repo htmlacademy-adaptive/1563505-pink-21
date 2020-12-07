@@ -4,6 +4,20 @@
     grid-template-columns: 1fr 2fr;
   }
 }
+.main-nav_logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 15px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .main-nav__list {
   padding: 0;
   margin: 0;
@@ -14,6 +28,7 @@
     flex-wrap: nowrap;
     border-top: 0;
     line-height: 18px;
+    margin-top: 29px;
   }
 }
 .main-nav__item {
@@ -27,38 +42,54 @@
     padding: 0;
     border: 0;
   }
-  .main-nav__item:not(:nth-child(4n+4)) {
-    @media (min-width: @desktop-width) {
-      margin-right: 10px;
-    }
-  }
 }
 .main-nav__link {
   text-transform: uppercase;
   text-decoration: none;
   color: @white;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   display: block;
   padding: 15px 20px;
 
   @media (min-width: @desktop-width) {
-    margin-left: 89px;
-    margin-right: 20px;
+    margin-left: 50px;
     padding: 0;
     font-weight: 400;
     text-transform: none;
-    }
-  .main-nav__link:not([href])::after {
-    @media (min-width: @desktop-width) {
-      content: "";
-      position: absolute;
-      bottom: -9px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: @white;
-    }
+  }
+}
+.main-nav__link[href]:hover {
+  color: @pink;
+}
+.main-nav__link[href]:active {
+  color: fade(@pink, 30%);
+
+  @media (min-width: @desktop-width) {
+    color: fade(@white, 30%);
+  }
+}
+.main-nav__link:not([href])::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: @white;
+  }
+}
+.main-nav__link--active {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @white;
+  }
+}
+.main-nav__link:first-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 30px;
   }
 }
 .main-nav__toggle {
@@ -71,7 +102,7 @@
   color: @white;
   background-color: transparent;
 
-@media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     display: none;
   }
   .main-nav__toggle::before,
@@ -90,4 +121,20 @@
   .main-nav__toggle::after {
     transform: translateY(-50%) rotate(-45deg);
   }
+}
+.main-nav__toggle::before,
+.main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  width: 28px;
+  height: 4px;
+  background-color: currentColor;
+}
+.main-nav__toggle::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+.main-nav__toggle::after {
+  transform: translateY(-50%) rotate(-45deg);
 }

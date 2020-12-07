@@ -1,5 +1,5 @@
 .form {
-  max-width: 940px;
+  max-width: 100%;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -8,13 +8,13 @@
     padding: 0 20px;
   }
   @media (min-width: @desktop-width) {
+    width: 980px;
     flex-flow: row wrap;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 .form__headline-wrapper{
   padding-top: 30px;
-  padding-bottom: 8px;
   margin: 0 auto;
   width: 280px;
 
@@ -24,9 +24,9 @@
     width: 500px;
   }
   @media (min-width: @desktop-width) {
-    flex-basis: 100%;
+    flex-basis: 800px;
     text-align: center;
-    padding-bottom: 49px;
+    padding-bottom: 80px;
   }
 }
 .form__headline {
@@ -36,33 +36,36 @@
   color: @dark-blue;
   line-height: 30px;
   text-align: center;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
   }
   @media (min-width: @desktop-width) {
-    max-width: 800px;
     margin: 0 auto;
   }
 }
 .form__name-wrapper {
   width: 100%;
-  padding-bottom: 42px;
+  padding: 20px 20px;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 20px;
     padding-bottom: 2px;
   }
   @media (min-width: @desktop-width) {
     flex-basis: 50%;
-    padding-top: 31px;
+    padding-top: 3px;
     padding-bottom: 30px;
+    padding-right: 30px;
     width: 434px;
   }
 }
 .form__achievments-wrapper {
-  padding-top: 14px;
+  padding-top: 20px;
   padding-bottom: 4px;
   background-color: @silver;
 
@@ -78,15 +81,21 @@
   }
 }
 .form__contacts-wrapper {
+  padding: 0 20px;
   margin-top: 13px;
   padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     order: 2;
-    padding-top: 34px;
-    padding-bottom: 30px;
+    padding-top: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
   }
   @media (min-width: @desktop-width) {
+    margin-top: 1px;
+    padding-top: 21px;
+    padding-bottom: 50px;
     width: 100%;
   }
 }
@@ -103,26 +112,29 @@
   }
   @media (min-width: @desktop-width) {
     flex-basis: 50%;
-    margin-left: auto;
+    margin-left: 60px;
     padding-top: 30px;
-    width: 435px;
-    background-color: @white;
   }
 }
 .form__emotions-wrapper {
+  padding: 0 20px;
   padding-top: 29px;
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     order: 4;
-    padding-top: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 14px;
     padding-bottom: 30px;
   }
   @media (min-width: @desktop-width) {
+    padding-top: 54px;
     width: 100%;
   }
 }
 .form__submit-wrapper {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   padding: 29px 20px 15px;
@@ -141,7 +153,6 @@
 }
 .form__fieldset {
   position: relative;
-  margin-top: 10px;
   padding: 0;
   border: none;
 
@@ -152,21 +163,22 @@
     margin-top: 40px;
   }
   @media (min-width: @desktop-width) {
-    margin-top: 70px;
+    margin-top: 0;
   }
 }
 .form__fieldset--name {
 
   @media (min-width: @tablet-width) {
+    margin-top: 0;
     border: none;
   }
   @media (min-width: @desktop-width) {
-    margin-top: 60px;
+
     border: none;
   }
 }
 .form__fieldset--achivments {
-  padding-top: 38px;
+  padding-top: 48px;
   padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
@@ -191,8 +203,7 @@
     padding: 52px 58px 55px;
   }
   @media (min-width: @desktop-width) {
-    padding: 54px 50px 56px 74px;
-    width: auto;
+    padding: 52px 58px 55px 55px;
   }
 }
 .form__fieldset--emotions {
@@ -205,7 +216,7 @@
 }
 .form__list {
   padding-left: 0;
-  margin-top: 18px;
+  margin-top: 0;
 }
 .form__list--row {
   @media (min-width: @desktop-width) {
@@ -335,9 +346,6 @@
   font-family: inherit;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
   color: @pink;
   display: block;
   padding: 0 10px;
@@ -373,6 +381,17 @@
     padding: 0;
   }
 }
+.form__legend--achievments {
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    position: absolute;
+    z-index: 5;
+    left: 67px;
+    top: 0;
+    transform: translateY(-50%);
+    padding: 0;
+  }
+}
 .form__legend--contacts {
   display: none;
 
@@ -381,6 +400,11 @@
   }
 }
 .form__legend-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
   @media (min-width: @tablet-width) {
     display: inline-flex;
     max-width: 90%;
@@ -453,8 +477,8 @@
 .form__label-radio::after {
   content: none;
   position: absolute;
-  left: 13px;
-  top: 50%;
+  left: 11px;
+  top: 53%;
   width: 14px;
   height: 14px;
   transform: translateY(-50%);

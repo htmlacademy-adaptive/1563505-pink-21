@@ -1,24 +1,43 @@
 .stores__list {
   display: flex;
   justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 78px;
 
-  @media @tablet-width {
+  @media (min-width: @tablet-width) {
     margin-top: 45px;
     margin-bottom: 38px;
   }
-  @media @desktop-width {
+  @media (min-width: @desktop-width) {
     margin-top: 67px;
     margin-bottom: 56px;
   }
 }
 .stores__description {
-  font-weight: 800;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 33px;
 
-  @media @tablet-width {
+  @media (min-width: @tablet-width) {
     font-size: 18px;
+    text-align: center;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.stores__description-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 53px;
+    width: 300px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 52px;
+    width: 300px;
   }
 }

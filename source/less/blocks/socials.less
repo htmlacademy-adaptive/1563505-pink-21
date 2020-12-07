@@ -4,10 +4,16 @@
   flex-wrap: wrap;
   padding-top: 39px;
   padding-bottom: 39px;
+  padding-left: 0;
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
+    padding-left: 140px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0 2px 0 10px;
+    max-width: 600px;
   }
 }
 .socials__item {
@@ -19,4 +25,17 @@
   @media (min-width: @desktop-width) {
     margin: 0 2px 0 10px;
   }
+}
+.socials__link {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: fade(@dark-blue, 10%);
+  border-radius: 50%;
+  color: @pink;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
 }

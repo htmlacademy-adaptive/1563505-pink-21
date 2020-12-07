@@ -1,16 +1,33 @@
 .prices {
-  padding-top: 91px;
-  padding-bottom: 32px;
+  padding-top: 105px;
+  padding-bottom: 38px;
+  margin-bottom: 39px;
   background-color: @silver;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 32px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100% 50px;
+  }
+  @media (min-width: @desktop-width) {
+    background-size: 100% 92px;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 86px;
-    padding-bottom: 69px;
+    margin-bottom: 69px;
   }
   @media (min-width: @desktop-width) {
     padding-top: 150px;
-    padding-bottom: 95px;
+    margin-bottom: 95px
   }
+}
+.prices__slider {
+  overflow: hidden;
+  text-transform: uppercase;
+  padding-top: 2px;
 }
 .prices__table {
   position: relative;
@@ -22,5 +39,42 @@
     position: static;
     left: auto;
     transform: none;
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+    }
   }
+}
+.prices__controls {
+  margin-top: 52px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+.prices__controls-button {
+  margin-left: 9px;
+  margin-right: 10px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  font-style: inherit;
+  background-color: fade(@dark-blue, 30%);
+  cursor: pointer;
+}
+.prices__controls-button:not(.prices__controls-button--current):hover {
+  background-color: fade(@dark-blue, 60%);
+}
+.prices__controls-button:not(.prices__controls-button--current):active {
+  background-color: fade(@dark-blue, 10%);
+}
+.prices__controls-button--current {
+  box-shadow: 0 0 0 3px @dark-blue;
+  background-color: transparent;
+  cursor: default;
 }

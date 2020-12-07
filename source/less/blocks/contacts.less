@@ -1,19 +1,19 @@
 .contacts {
-  padding-top: 19px;
+  padding-top: 9px;
   padding-bottom: 38px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-top: 46px;
+    padding-top: 43px;
     padding-bottom: 28px;
   }
   @media (min-width: @desktop-width) {
-    padding: 64px 0 19px;
+    padding: 58px 0 19px;
   }
 }
 .contacts__title {
   margin-top: 24px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 28.8px;
   color: @dark-blue;
@@ -27,6 +27,8 @@
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 60px;
+    padding-top: 15px;
+    padding-bottom: 40px;
   }
 }
 .contacts__list {
@@ -36,16 +38,18 @@
 
   @media (min-width: @tablet-width) {
     justify-content: space-around;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-top: 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 32px;
   }
   @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding-top: 56px;
   }
 }
-.contact__term {
+.contacts__term {
   font-weight: 700;
   font-size: 18px;
   line-height: 24.51px;
@@ -67,24 +71,24 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
-  .contacts__item--phone {
-    @media (min-width: @desktop-width) {
-      order: 1;
-    }
+}
+.contacts__item--phone {
+  @media (min-width: @desktop-width) {
+    order: 1;
   }
-  .contacts__item--email {
-    @media (min-width: @desktop-width) {
-      order: 3;
-    }
+}
+.contacts__item--email {
+  @media (min-width: @desktop-width) {
+    order: 3;
   }
-  .contacts__item--address {
-    @media (min-width: @desktop-width) {
-      order: 2;
-    }
+}
+.contacts__item--address {
+  @media (min-width: @desktop-width) {
+    order: 2;
   }
-  .contacts__item:last-child {
-    margin-bottom: 0;
-  }
+}
+.contacts__item:last-child {
+  margin-bottom: 0;
 }
 .contacts__link {
   text-decoration: none;
@@ -92,6 +96,13 @@
   font-size: 24px;
   line-height: 32.68px;
   color: @pink;
+}
+.contacts__link:hover {
+  color: @dark-blue;
+  text-decoration: underline;
+}
+.contacts__link:active {
+  color: fade(@dark-blue, 30%);
 }
 .contacts__description {
   margin-left: 0;

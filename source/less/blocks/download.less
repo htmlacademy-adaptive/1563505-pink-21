@@ -1,34 +1,63 @@
 .download {
   display: block;
-  background-color: @dark-blue;
-  margin: 0 auto;
   padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     padding-top: 93px;
-    padding-bottom: 110px;
-    min-width: 620px;
+    padding-bottom: 83px;
+    width: 620px;
   }
-  @media @desktop-width {
-    min-width: 940px;
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 .download__button {
-  background-color: @dark-blue;
+  background-color: transparent;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   color: @white;
   border-color: @white;
-  margin-left: 40px;
+  display: block;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 30px;
+  line-height: 18px;
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 100%;
 
-  @media @desktop-width {
-    font-size: 21px;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0;
   }
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    width: 300px;
+  }
+}
+.download__button:hover {
+  color: @pink;
+  background-color: @white;
+}
+.download__button:active {
+  color: fade(@pink, 30%);
 }
 .download__stores {
   background-color: @dark-blue;
   font-size: 14px;
   line-height: 24px;
   color: @white;
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    margin: 0;
+  }
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
