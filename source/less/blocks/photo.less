@@ -1,5 +1,4 @@
 .photo {
-  min-width: 280px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -11,6 +10,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  padding-bottom: 20px;
   width: auto;
   max-width: 320px;
 
@@ -39,8 +39,24 @@
     height: 400px;
   }
 }
-.photo__link::before {
-  content: attr(data-panorama-text);
+.photo__link--full {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 137px;
+
+  @media (min-width: @tablet-width) {
+    width: 700px;
+    height: 509px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }
+}
+.photo__link--full::before {
+  content: "Панорама дня";
   position: absolute;
   z-index: 10;
   top: 0;
@@ -59,22 +75,6 @@
   @media (min-width: @desktop-width) {
     top: 54px;
     right: 130px;
-  }
-}
-.photo__link--full {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 320px;
-  height: 137px;
-
-  @media (min-width: @tablet-width) {
-    width: 700px;
-    height: 509px;
-  }
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    height: 506px;
   }
 }
 .photo__image {
@@ -128,7 +128,6 @@
   margin-left: 5px;
 }
 .photo__text {
-  text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
