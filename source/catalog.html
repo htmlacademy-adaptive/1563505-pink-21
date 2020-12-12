@@ -54,22 +54,24 @@
           </div>
         </nav>
 
-      </header>
+        <h1 class="visually-hidden">Каталог фотографий Pink</h1>
+        <section class="promo-inner">
+          <div class="promo-inner__wrapper">
+            <h2 class="visually-hidden"></h2>
+            <!-- Не забыть про line-height у формы и каталога -->
+            <h3 class="promo-inner__headline">Фотографии<br>пользователей</h3>
+          </div>
+        </section>
 
-      <h1 class="visually-hidden">Каталог фотографий Pink</h1>
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="visually-hidden"></h2>
-          <!-- Не забыть про line-height у формы и каталога -->
-          <h3 class="promo__headline">Фотографии<br>пользователей</h3>
-        </div>
-      </section>
+      </header>
 
       <main class="page-catalog">
 
-        <section class="gallery container">
+        <section class="gallery">
           <h2 class="visually-hidden">Галерея пользователей Pink</h2>
-          <p class="gallery__headline">Взгляните на фотографии, которые выкладывают пользователи!&thinsp;</p>
+          <div class="gallery__headline-wrapper">
+            <p class="gallery__headline">Взгляните на фотографии, которые выкладывают пользователи!&thinsp;Видите, как не хватает ваших?</p>
+          </div>
           <figure class="photo photo--full">
             <a class="photo__link photo__link--full" href="#">
             </a>
@@ -211,8 +213,8 @@
                   </div>
                 </div>
                 <div class="form-photo__buttons">
-                  <button class="form-photo__button button" type="submit"><span class="form-photo__button--submit">Запостить</span></button>
-                  <button class="form-photo__button button" type="reset"><span class="form-photo__button--reset">Отмена</span></button>
+                  <button class="form-photo__button button button--rounded button--red" type="submit"><span class="form-photo__button--submit">Запостить</span></button>
+                  <button class="form-photo__button button button--rounded button--gray" type="reset"><span class="form-photo__button--reset">Отмена</span></button>
                 </div>
               </div>
             </form>

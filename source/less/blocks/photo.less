@@ -1,5 +1,4 @@
 .photo {
-  min-width: 280px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -11,6 +10,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  padding-bottom: 20px;
   width: auto;
   max-width: 320px;
 
@@ -39,28 +39,6 @@
     height: 400px;
   }
 }
-.photo__link::before {
-  content: attr(data-panorama-text);
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  right: 20px;
-  padding: 6px 20px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  background-color: @pink;
-
-  @media (min-width: @tablet-width) {
-    top: 56px;
-    right: 40px;
-  }
-  @media (min-width: @desktop-width) {
-    top: 54px;
-    right: 130px;
-  }
-}
 .photo__link--full {
   position: relative;
   left: 50%;
@@ -77,6 +55,28 @@
     height: 506px;
   }
 }
+.photo__link--full::before {
+  content: "Панорама дня";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 20px;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: @pink;
+
+  @media (min-width: @tablet-width) {
+    top: 78px;
+    right: 39px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
+}
 .photo__image {
   display: block;
   max-width: 100%;
@@ -90,6 +90,7 @@
   padding: 18px 17px 21px;
 
   @media (min-width: @tablet-width) {
+    width: 300px;
     padding: 23px 32px 24px 27px;
   }
 }
@@ -102,7 +103,7 @@
   @media (min-width: @tablet-width) {
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 24px 29px 13px 27px;
+    padding: 44px 29px 13px 27px;
     width: 620px;
   }
   @media (min-width: @desktop-width) {
@@ -128,7 +129,6 @@
   margin-left: 5px;
 }
 .photo__text {
-  text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -148,6 +148,7 @@
   }
 }
 .photo__likes {
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   margin-top: auto;
