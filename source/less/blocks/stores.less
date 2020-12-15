@@ -51,3 +51,32 @@
     width: 460px;
   }
 }
+.stores__link {
+  display: inline-block;
+  vertical-align: top;
+  width: 47px;
+  height: 56px;
+  background-color: @pink;
+  margin-right: 16px;
+  margin-left: 16px;
+
+  &--apple {
+    background: url(../img/icons/logo-apple.svg) no-repeat top left;
+    background-size: 47px 56px;
+  }
+  &--android {
+    background: url(../img/icons/logo-android.svg) no-repeat center 8px;
+    background-size: 43px 47px;
+
+    @media (min-width: @tablet-width) {
+      opacity: 0.4;
+    }
+    @media (min-width: @desktop-width) {
+      opacity: 1;
+    }
+  }
+  &--windows {
+    background: url(../img/icons/logo-microsoft.svg) no-repeat right 12px;
+    background-size: 44px 41px;
+  }
+}
