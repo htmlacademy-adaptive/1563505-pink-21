@@ -56,13 +56,16 @@
 
         <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
         <section class="promo">
-          <div class="download promo__download container">
+          <div class="download promo__download ">
             <div class="promo__wrapper">
               <h2 class="visually-hidden">Главный экран сайта</h2>
               <h3 class="promo__headline">Взгляните на жизнь<br>иначе!</h3>
             </div>
-            <a class="download__button" type="button" name="button-download">Скачать приложение</a>
+
           <div class="stores download__stores">
+            <div class="download__button-wrapper">
+              <a class="download__button" type="button" name="button-download">Скачать приложение</a>
+            </div>
             <ul class="stores__list">
               <li class="stores__item">
                 <a class="stores__link" href="#" aria-label="iOS">
@@ -274,7 +277,15 @@
             </div>
           </dl>
         </section>
-        <section class="map"></section>
+        <section class="map">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/content/map-desktop@1x.jpg 1x, img/content/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/content/map-tablet@1x.jpg 1x, img/content/map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/content/map-mobile@1x.jpg" srcset="img/content/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
+        <div class="map__marker"></div>
+        <div class="map__interactive" id="map"></div>
+        </section>
 
       </main>
 

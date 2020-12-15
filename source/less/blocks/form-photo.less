@@ -20,16 +20,36 @@
   display: block;
   width: 280px;
   height: 374px;
+  background-image: url("../img/photo-road-mobile@1x.jpg");
+  background-position: 50% 0;
+  background-size: image-size("../img/photo-road-mobile@1x.jpg");
+  background-repeat: no-repeat;
   cursor: pointer;
+
+  @media @retina {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     margin-top: 16px;
     margin-left: auto;
     width: 300px;
     height: 400px;
+    background-image: url("../img/photo-road-tablet@1x.jpg");
+    background-size: image-size("../img/photo-road-tablet@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/photo-road-tablet@2x.jpg");
+    }
   }
   @media (min-width: @desktop-width) {
     margin-left: 0;
+    background-image: url("../img/photo-road-desktop@1x.jpg");
+    background-size: image-size("../img/photo-road-desktop@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/photo-road-desktop@2x.jpg");
+    }
   }
 }
 .form-photo__controls {

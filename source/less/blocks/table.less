@@ -36,6 +36,40 @@
 .table__header:last-child {
   border-right-color: @dark-blue
 }
+.table__header--hit {
+  background-image: url("../img/bg-hit.svg");
+  background-size: image-size("../img/bg-hit.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-size: image-size("../img/bg-hit-tablet.svg");
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-hit.svg");
+    background-size: image-size("../img/bg-hit.svg");
+  }
+}
+.table__header--hit::before {
+  content: "Хит";
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  font-weight: 400;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    top: 3px;
+    left: 7px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 12px;
+    left: 12px;
+  }
+}
 .table__license-type {
   display: block;
   font-weight: 700;
