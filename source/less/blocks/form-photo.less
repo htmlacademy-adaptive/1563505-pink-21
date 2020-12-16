@@ -71,6 +71,7 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 66px;
     padding: 0;
+    position: relative;
   }
   @media (min-width: @desktop-width) {
     margin-bottom: 145px;
@@ -78,10 +79,20 @@
 }
 .form-photo__filters-buttons {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 240px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 130px;
+    top: 10px;
+  }
+  @media (min-width: @desktop-width) {
+    right: 268px;
+    top: 10px;
   }
 }
 .form-photo__icon-wrapper {
@@ -103,6 +114,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   padding: 0;
   width: 48px;
   height: 48px;
@@ -114,7 +126,7 @@
   outline: 1px dashed @pink;
 }
 .form-photo__filter {
-  osition: relative;
+  position: relative;
   display: none;
   align-items: center;
   height: 72px;
@@ -123,11 +135,75 @@
     display: flex;
   }
 }
+.form-photo__filter-button-icon {
+  fill: rgba(@dark-blue, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @tablet-width) {
+    fill: @pink;
+  }
+}
+.form-photo__filter-button-icon--crop {
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 48px;
+    margin-left: -2px;
+    margin-top: 1px;
+  }
+}
+.form-photo__filter-button-icon--fill {
+  margin-top: 2px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    width: 48px;
+    height: 48px;
+  }
+}
+.form-photo__filter-button-icon--contrast {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 49px;
+    width: 16px;
+    height: 16px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+    margin-left: -2px;
+  }
+}
+.form-photo__filter-button-icon:hover {
+  fill: @dark-blue;
+  cursor: pointer;
+}
+.form-photo__filter-button-icon--active {
+  fill: @pink;
+}
 .form-photo__filter::after {
   content: "";
   position: absolute;
-  left: -40px;
-  bottom: -3076px;
+  left: -50px;
+  bottom: -1px;
   width: ~"calc(100% + 40px * 2)";
   height: 1px;
   background-color: @gray;

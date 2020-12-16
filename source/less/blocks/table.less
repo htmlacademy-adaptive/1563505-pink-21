@@ -151,14 +151,19 @@
 }
 .table__feature-value {
   display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .table__feature-value--true {
   width: 31px;
   height: 23px;
+  background-image: url("../img/icon-yes.svg");
 }
 .table__feature-value--false {
   width: 36px;
   height: 27px;
+  background-image: url("../img/icon-no.svg");
 }
 .table__feature-value--mobile {
   @media (min-width: @tablet-width) {

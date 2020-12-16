@@ -94,7 +94,6 @@
 }
 .main-nav__toggle {
   position: relative;
-  align-self: flex-end;
   padding: 0;
   border: 0;
   width: 50px;
@@ -105,32 +104,22 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
-  .main-nav__toggle::before,
-  .main-nav__toggle::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -3px;
-    width: 28px;
-    height: 4px;
-    background-color: currentColor;
-  }
-  .main-nav__toggle::before {
-    transform: translateY(-50%) rotate(45deg);
-  }
-  .main-nav__toggle::after {
-    transform: translateY(-50%) rotate(-45deg);
-  }
 }
 .main-nav__toggle::before,
 .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: -10px;
+  left: 275px;
   right: -3px;
   width: 28px;
   height: 4px;
   background-color: currentColor;
+  @media (min-width: @tablet-width) {
+    top: -30px;
+    left: 615px;
+    right: -3px;
+  }
 }
 .main-nav__toggle::before {
   transform: translateY(-50%) rotate(45deg);
