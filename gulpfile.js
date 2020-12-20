@@ -5,6 +5,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sourcemap = require("gulp-sourcemaps");
 const sync = require("browser-sync").create();
+// const svgstore = require("gulp-svgstore");
 
 gulp.task("clean", function() {
   return del("build");
@@ -41,33 +42,18 @@ exports.styles = styles;
 
 // Image min
 
-gulp.task("images", function() {
-  return gulp.src("build/img/**/*.{png,jpg,gif}")
-    .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.jpegtran({progressive: true})
-      ]))
-    .pipe(gulp.dest("build/img"));
-});
+
 
 // Sprite
 
-gulp.task("symbols", function() {
-  return gulp.src("build/img/icons/*.svg")
-    .pipe(svgmin())
-    .pipe(svgstore({
-      inlineSvg: true
-     }))
-    .pipe(rename("symbols.svg"))
-    .pipe(gulp.dest("build/img"));
-});
+const sprite = () => {
+  return gulp.src("source/img/*.svg")
+    .pipe(svgstore())
+    .pipe(rename(obj:"sprite.svg"))
+    .pipe(gulp.dest("source/img/icons"))
+}
 
-// HTML copy
-
-gulp.task("html:copy", function() {
-   return gulp.src("*.html")
-     .pipe(gulp.dest("build"));
-});
+exports.sprite = sprite;
 
 // Server
 
