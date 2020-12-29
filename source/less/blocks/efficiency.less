@@ -14,6 +14,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    height: 310px;
   }
   @media (min-width: @desktop-width) {
     height: 449px;
@@ -23,6 +24,7 @@
 }
 .efficiency__image {
   @media (min-width: @tablet-width) {
+    position: relative;
     width: 312px;
     background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
     background-repeat: no-repeat, no-repeat;
@@ -39,16 +41,16 @@
 .efficiency__image-text {
   @media (min-width: @tablet-width) {
     position: absolute;
-    left: 86px;
-    top: 1835px;
+    left: 20%;
+    top: 33%;
     font-weight: 700;
     font-size: 96px;
     line-height: 163px;
     color: @pink;
   }
   @media (min-width: @desktop-width) {
-    left: 208px;
-    top: 1914px;
+    left: 30%;
+    top: 33%;
     font-weight: 700;
     font-size: 120px;
     line-height: 163px;
@@ -70,7 +72,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    padding-top: 45px;
+    padding-top: 40px;
     padding-left: 40px;
   }
 }
@@ -92,10 +94,12 @@
 }
 .efficiency__text {
   @media (min-width: @tablet-width) {
+    width: 300px;
     margin-top: 10px;
     margin-bottom: 11px;
   }
   @media (min-width: @desktop-width) {
+    width: 530px;
     margin-top: 22px;
     margin-bottom: 31px;
   }

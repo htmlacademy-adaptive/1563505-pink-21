@@ -1,0 +1,60 @@
+.header-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 75px;
+  height: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+.header-logo__svg {
+  fill: @white;
+  color: @pink;
+  margin-left: -52px;
+  margin-top: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 1px;
+    margin-left: 21px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 130px;
+  }
+}
+.header-logo__glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+.header-logo__glasses-crop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+.header-logo__star,
+.header-logo__stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    fill: currentColor;
+  }
+}
+.header-logo[href]:hover .header-logo__svg {
+  fill: @pink;
+  color: @white;
+}
+.header-logo[href]:active .header-logo__svg {
+  fill: @white;
+  color: @pink;
+  opacity: 0.3;
+}

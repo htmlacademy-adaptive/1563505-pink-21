@@ -1,3 +1,11 @@
+.features {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 25px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0px;
+  }
+}
 .features__headline {
   font-size: 24px;
   line-height: 28.8px;
@@ -8,12 +16,13 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 54.47px;
-    padding: 45px 20px 26px;
+    padding: 45px 20px 32px;
   }
   @media (min-width: @desktop-width) {
     font-size: 50px;
-    line-height: 60.09px;
+    line-height: 68.09px;
     margin-top: 20px;
+    padding-bottom: 50px;
   }
 }
 .features__headline p {
@@ -24,7 +33,7 @@
     margin-bottom: 0;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 8px;
+    margin-bottom: 1px;
   }
 }
 .features__list-wrapper {
@@ -72,7 +81,7 @@
   }
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    padding: 0 0 54px;
+    padding: 0 0 14px;
     background: none;
 
     @media @retina {
@@ -120,7 +129,7 @@
 }
 .features__item--first {
   @media (min-width: @desktop-width) {
-    margin-left: 40px;
+    margin-left: 0px;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
 
     @media @retina {
@@ -130,6 +139,7 @@
 }
 .features__item--second {
   @media (min-width: @desktop-width) {
+    margin-left: 80px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
     @media @retina {
@@ -139,6 +149,7 @@
 }
 .features__item--third {
   @media (min-width: @desktop-width) {
+    margin-left: 80px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
 
     @media @retina {
@@ -154,7 +165,8 @@
   margin-bottom: 12px;
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 34px;
+    margin-top: 8px;
+    margin-bottom: 28px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -170,8 +182,28 @@
   @media (min-width: @tablet-width) {
     margin-top: 12px;
     margin-bottom: 16px;
+    width: 280px;
   }
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    line-height: 30px;
+    width: 240px;
+  }
+}
+.features__text--second {
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 240px;
+  }
+}
+.features__text--third {
+  @media (min-width: @tablet-width) {
+    width: 310px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 240px;
   }
 }

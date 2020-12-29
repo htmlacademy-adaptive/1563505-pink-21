@@ -1,9 +1,16 @@
 .table {
-  width: 900px;
+  width: 835px;
   border-spacing: 0;
 
   @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
   }
 }
 .table__header {
@@ -54,19 +61,19 @@
 .table__header--hit::before {
   content: "Хит";
   position: absolute;
-  top: 12px;
-  left: 10px;
+  top: 19px;
+  left: 12px;
   transform: rotate(-45deg);
   font-size: 14px;
   font-weight: 400;
   color: @white;
 
   @media (min-width: @tablet-width) {
-    top: 3px;
+    top: 13px;
     left: 7px;
   }
   @media (min-width: @desktop-width) {
-    top: 12px;
+    top: 18px;
     left: 12px;
   }
 }
@@ -103,11 +110,11 @@
 
   @media (min-width: @tablet-width) {
     text-transform: none;
-    padding: 8px 16px 8px;
+    padding: 8px 16px 5px;
     width: 25%;
   }
   @media (min-width: @desktop-width) {
-    padding: 14px 20px 15px;
+    padding: 14px 15px;
     font-size: 18px;
   }
 }
@@ -145,20 +152,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 7px;
+  margin-right: 3px;
   @media (min-width: @tablet-width) {
     justify-content: center;
+    margin-right: 1px;
   }
 }
 .table__feature-value {
   display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media (min-width: @tablet-width) {
+    margin-top: 1px;
+  }
 }
 .table__feature-value--true {
   width: 31px;
   height: 23px;
+  background-image: url("../img/icon-yes.svg");
 }
 .table__feature-value--false {
   width: 36px;
   height: 27px;
+  background-image: url("../img/icon-no.svg");
 }
 .table__feature-value--mobile {
   @media (min-width: @tablet-width) {

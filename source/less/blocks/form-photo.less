@@ -71,6 +71,7 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 66px;
     padding: 0;
+    position: relative;
   }
   @media (min-width: @desktop-width) {
     margin-bottom: 145px;
@@ -78,10 +79,20 @@
 }
 .form-photo__filters-buttons {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 240px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 130px;
+    top: 10px;
+  }
+  @media (min-width: @desktop-width) {
+    right: 268px;
+    top: 10px;
   }
 }
 .form-photo__icon-wrapper {
@@ -103,6 +114,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   padding: 0;
   width: 48px;
   height: 48px;
@@ -114,7 +126,7 @@
   outline: 1px dashed @pink;
 }
 .form-photo__filter {
-  osition: relative;
+  position: relative;
   display: none;
   align-items: center;
   height: 72px;
@@ -123,11 +135,79 @@
     display: flex;
   }
 }
+.form-photo__filter-button-icon {
+  fill: rgba(@dark-blue, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @tablet-width) {
+    fill: @pink;
+    left: 50%;
+  }
+}
+.form-photo__filter-button-icon--crop {
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 48px;
+    margin-left: -2px;
+    margin-top: 1px;
+  }
+}
+.form-photo__filter-button-icon--fill {
+  margin-top: 2px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    width: 48px;
+    height: 48px;
+  }
+}
+.form-photo__filter-button-icon--contrast {
+  margin-top: 5px;
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+    margin-left: 3px;
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 48px;
+    margin-top: 57px;
+    margin-left: 6px;
+  }
+}
+.form-photo__filter-button-icon:hover {
+  fill: @dark-blue;
+  cursor: pointer;
+}
+.form-photo__filter-button-icon--active {
+  fill: @pink;
+}
 .form-photo__filter::after {
   content: "";
   position: absolute;
-  left: -40px;
-  bottom: -3076px;
+  left: -50px;
+  bottom: -1px;
   width: ~"calc(100% + 40px * 2)";
   height: 1px;
   background-color: @gray;
@@ -139,6 +219,67 @@
 }
 .form-photo__filter--current {
   display: flex;
+}
+.form-photo__control {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 28px;
+
+    &--crop {
+      display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding-left: 27px;
+    padding-right: 18px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+}
+.form-photo__range {
+  position: relative;
+  height: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.form-photo__range-scale {
+  height: 2px;
+  background-color: @dark-blue;
+}
+
+.form-photo__range-value {
+  height: 2px;
+  width: 50%;
+}
+
+.form-photo__range-btn {
+  position: absolute;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background-color: @white;
+  cursor: pointer;
+  outline: none;
+
+  &:active,
+  &:focus {
+    background-color: @pink;
+  }
 }
 .form-photo__filter-range {
   margin-left: auto;

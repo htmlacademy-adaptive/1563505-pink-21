@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 9px;
+  padding-top: 14px;
   padding-bottom: 38px;
   text-align: center;
 
@@ -13,22 +13,22 @@
 }
 .contacts__title {
   margin-top: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-size: 24px;
   line-height: 28.8px;
   color: @dark-blue;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    padding-bottom: 48px;
+    padding-bottom: 38px;
     width: 500px;
     font-size: 40px;
     line-height: 48px;
   }
   @media (min-width: @desktop-width) {
     font-size: 50px;
-    line-height: 60px;
-    padding-top: 15px;
+    line-height: 68.09px;
+    padding-top: 17px;
     padding-bottom: 40px;
   }
 }
@@ -63,7 +63,7 @@
   }
 }
 .contacts__item {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
@@ -71,21 +71,27 @@
   }
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    margin-left: 30px;
   }
 }
 .contacts__item--phone {
+  @media (min-width: @tablet-width) {
+    margin-right: 30px;
+  }
   @media (min-width: @desktop-width) {
     order: 1;
   }
 }
 .contacts__item--email {
   @media (min-width: @desktop-width) {
+    margin-left: 10px;
     order: 3;
   }
 }
 .contacts__item--address {
   @media (min-width: @desktop-width) {
     order: 2;
+    margin-left: 10px;
   }
 }
 .contacts__item:last-child {

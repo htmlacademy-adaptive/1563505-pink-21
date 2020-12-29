@@ -1,10 +1,27 @@
 const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
+const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const sourcemap = require("gulp-sourcemaps");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
+
+gulp.task("clean", function() {
+  return del("build");
+});
+
+gulp.task("copy", function() {
+  return gulp.src([
+          "source/fonts/**/*.{woff,woff2}",
+          "source/img/**",
+          "source/js/**",
+          "source/*.html"
+     ], {
+       base: "."
+     })
+     .pipe(gulp.dest("build"));
+});
 
 // Styles
 
@@ -22,6 +39,13 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+// Image min
+
+
+
+// Sprite
+
 
 // Server
 
@@ -49,3 +73,15 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+gulp.task ("build", function(fn) {
+  run(
+    "clean",
+    "copy",
+    "style",
+    "js",
+    "images",
+    "symbols",
+    fn
+  );
+});
