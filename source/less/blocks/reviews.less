@@ -13,6 +13,15 @@
     padding-bottom: 40px;
   }
 }
+.reviews__background {
+  @media (min-width: @desktop-width) {
+    height: 185px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+  }
+}
 .reviews__slide {
   display: flex;
   flex-direction: column;
@@ -170,10 +179,12 @@
   border-right-color: fade(@dark-blue, 10%);
 }
 .reviews__nav-button--prev::before {
-  left: 7px;
+  left: -75px;
+  top: 52px;
   transform: translateY(-50%) rotate(225deg);
 }
 .reviews__nav-button--next::before {
-  right: 7px;
+  left: 70px;
+  top: 52px;
   transform: translateY(-50%) rotate(45deg);
 }

@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
+  @media (min-width: @wide-width) {
+    display: flex;
+  }
 }
 .main-nav_logo-wrapper {
   display: flex;
@@ -16,6 +19,11 @@
   @media (min-width: @desktop-width) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+.main-nav__wrapper {
+  @media (min-width: @wide-width) {
+    margin: 0 auto;
   }
 }
 .main-nav__wrapper--off {
@@ -73,10 +81,10 @@
     text-transform: none;
   }
 }
-.main-nav__link[href]:hover {
+.main-nav__link[href]:not(.main-nav__link--active):hover {
   color: @pink;
 }
-.main-nav__link[href]:active {
+.main-nav__link[href]:not(.main-nav__link--active):active {
   color: fade(@pink, 30%);
 
   @media (min-width: @desktop-width) {
