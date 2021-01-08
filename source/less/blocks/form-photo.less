@@ -9,11 +9,15 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 40px;
-    padding-bottom: 29px;
+    padding-top: 43px;
+    padding-bottom: 26px;
   }
   @media (min-width: @desktop-width) {
     padding: 41px 60px 57px 80px;
+  }
+  @media (min-width: @wide-width) {
+    justify-content: center;
+    padding: 41px 0px 57px 0px;
   }
 }
 .form-photo__image {
@@ -56,12 +60,13 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 50px;
     width: 275px;
     margin-right: auto;
   }
   @media (min-width: @desktop-width) {
     margin-right: 0;
+    margin-left: 90px;
     width: 410px;
   }
 }
@@ -144,6 +149,9 @@
 
   @media (min-width: @tablet-width) {
     fill: @pink;
+    left: 20%;
+  }
+  @media (min-width: @desktop-width) {
     left: 50%;
   }
 }

@@ -80,7 +80,7 @@
 }
 .form__contacts-wrapper {
   padding: 0 20px;
-  margin-top: 30px;
+  margin-top: 40px;
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -98,7 +98,7 @@
   }
 }
 .form__platform-wrapper {
-  padding-top: 39px;
+  padding-top: 35px;
   background-color: @silver;
 
   @media (min-width: @tablet-width) {
@@ -115,7 +115,7 @@
 }
 .form__emotions-wrapper {
   padding: 0 20px;
-  padding-top: 29px;
+  padding-top: 31px;
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -126,7 +126,7 @@
     padding-bottom: 25px;
   }
   @media (min-width: @desktop-width) {
-    padding-top: 44px;
+    padding-top: 51px;
     padding-bottom: 30px;
     width: 100%;
   }
@@ -182,10 +182,10 @@
   padding-right: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 52px 58px 15px;
+    padding: 52px 58px 25px;
   }
   @media (min-width: @desktop-width) {
-    padding: 52px 8px 13px 58px;
+    padding: 57px 8px 13px 58px;
   }
 }
 .form__fieldset--contacts {
@@ -274,6 +274,9 @@
   @media (min-width: @desktop-width) {
     margin-right: 70px;
   }
+  @media (min-width: @wide-width) {
+    margin-right: 62px;
+  }
 }
 .form__name-item--contacts::after {
   @media (min-width: @tablet-width) {
@@ -299,7 +302,7 @@
   background-image: url("../img/icon-mail.svg");
 }
 .form__achivments-item {
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 
   @media (min-width: @desktop-width) {
     width: 260px;
@@ -558,6 +561,10 @@
   }
   &:active::before {
     border-color: @pink;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 1px;
+    padding-left: 60px;
   }
 }
 .form__checkbox {
