@@ -79,8 +79,8 @@
 
       <header class="page__header header">
 
-        <nav class="page__main-nav main-nav">
-          <div class="main-nav_logo-wrapper">
+        <nav class="page__main-nav main-nav main-nav--widescreen">
+          <div class="main-nav__logo-wrapper">
             <a href="#" class="logo header__logo header-logo" aria-label="Логотип сайта Pink">
               <svg class="header-logo__svg" width="147" height="40">
                 <use xlink:href="#header-logo__svg"></use>
@@ -108,14 +108,13 @@
                 </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru">
+                <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/21">
                   HTML Academy
                 </a>
               </li>
             </ul>
           </div>
         </nav>
-
         <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
         <section class="promo promo--short">
           <div class="download promo__download ">
@@ -191,9 +190,11 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
-          <div class="container">
+        <section class="reviews container">
             <h2 class="visually-hidden">Отзывы</h2>
+            <div class="reviews__background">
+
+            </div>
             <div class="reviews__slide reviews__slide--current">
               <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__author-description">25 лет, водитель трамвая</p>
@@ -215,7 +216,6 @@
               <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Вперёд">
               </button>
             </div>
-          </div>
         </section>
         <section class="prices">
           <h2 class="visually-hidden">Стоимость приложения</h2>
@@ -359,7 +359,7 @@
       <footer class="footer page__footer footer--index">
 
         <div class="footer__wrapper container">
-          <a class="logo footer__logo footer-logo" href="#" aria-label="Логотип сайта Pink">
+          <a href="#" class="logo footer__logo footer-logo" aria-label="Логотип сайта Pink">
             <svg class="footer-logo__svg" width="147" height="40">
               <use xlink:href="#footer-logo__svg"></use>
             </svg>
