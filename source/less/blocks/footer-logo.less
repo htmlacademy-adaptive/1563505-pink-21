@@ -19,14 +19,14 @@
   color: @pink;
   width: 147px;
   height: 40px;
-}
-.footer-logo[href]:hover .footer-logo__svg {
-  fill: @pink;
-}
-.footer-logo[href]:active .footer-logo__svg {
-  fill: @dark-blue;
-  color: @pink;
-  opacity: 0.3;
+  &:hover {
+    fill: @pink;
+  }
+  &:active {
+    fill: @dark-blue;
+    color: @pink;
+    opacity: 0.3;
+  }
 }
 .footer-logo__glasses {
   fill: currentColor;
