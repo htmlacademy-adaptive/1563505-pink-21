@@ -18,6 +18,7 @@
 .header-logo__svg {
   fill: @white;
   color: @pink;
+
   padding-top: 5px;
 
   @media (min-width: @tablet-width) {
@@ -25,7 +26,6 @@
   }
   &:hover {
     fill: @pink;
-    color: @white;
   }
   &:active {
     fill: @white;
@@ -50,12 +50,13 @@
     display: block;
   }
 }
-.header-logo__star,
-.header-logo__stars {
+.header-logo__star-icon,
+.header-logo__stars-icon {
   display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
-    fill: currentColor;
+    fill: @pink;
+    color: @pink;
   }
 }
