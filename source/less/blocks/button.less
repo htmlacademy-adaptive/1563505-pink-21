@@ -8,6 +8,7 @@
   text-decoration: none;
   cursor: pointer;
 }
+
 .button--rounded {
   padding: 15px;
   border-width: 3px;
@@ -16,6 +17,7 @@
   line-height: 18px;
   background-color: transparent;
 }
+
 .button--square {
   padding: 16px 15px;
   width: 100%;
@@ -23,38 +25,47 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+
 .button--red {
   border-color: @pink;
   color: @pink;
 }
+
 .button--red:hover {
   color: @white;
   background-color: @pink;
 }
+
 .button--red:active {
   color: fade(@white, 30%);
   background-color: @pink;
 }
+
 .button--gray {
   border-color: fade(@dark-blue, 10%);
   color: @gray;
 }
+
 .button--gray:hover {
   border-color: fade(@dark-blue, 30%);
   color: fade(@dark-blue, 30%);
 }
+
 .button--gray:active {
   border-color: fade(@dark-blue, 0%);
   color: fade(@white, 30%);
   background-color: fade(@dark-blue, 30%);
 }
+
 .button--green {
   color: @white;
   background-color: @green;
 }
+
 .button--green:hover {
   background-color: @dark-green;
 }
+
 .button--green:active {
   color: fade(@white, 30%);
 }

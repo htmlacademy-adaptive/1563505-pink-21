@@ -12,14 +12,17 @@
     padding-top: 43px;
     padding-bottom: 26px;
   }
+
   @media (min-width: @desktop-width) {
     padding: 41px 60px 57px 80px;
   }
+
   @media (min-width: @wide-width) {
     justify-content: center;
-    padding: 41px 0px 57px 0px;
+    padding: 41px 0 57px 0;
   }
 }
+
 .form-photo__image {
   display: block;
   width: 280px;
@@ -46,6 +49,7 @@
       background-image: url("../img/photo-road-tablet@2x.jpg");
     }
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 0;
     background-image: url("../img/photo-road-desktop@1x.jpg");
@@ -56,20 +60,22 @@
     }
   }
 }
-.form-photo__controls {
 
+.form-photo__controls {
   @media (min-width: @tablet-width) {
     margin-top: 0;
     margin-left: 50px;
     width: 275px;
     margin-right: auto;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 0;
     margin-left: 90px;
     width: 410px;
   }
 }
+
 .form-photo__filters {
   padding: 42px 20px 38px;
 
@@ -78,10 +84,12 @@
     padding: 0;
     position: relative;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 145px;
   }
 }
+
 .form-photo__filters-buttons {
   display: flex;
   justify-content: space-around;
@@ -95,11 +103,13 @@
     right: 130px;
     top: 10px;
   }
+
   @media (min-width: @desktop-width) {
     right: 268px;
     top: 10px;
   }
 }
+
 .form-photo__icon-wrapper {
   display: none;
   justify-content: center;
@@ -110,11 +120,13 @@
     width: 27px;
     height: 27px;
   }
+
   @media (min-width: @desktop-width) {
     width: 48px;
     height: 48px;
   }
 }
+
 .form-photo__filter-button {
   display: flex;
   justify-content: center;
@@ -127,9 +139,11 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 .form-photo__filter-button:focus {
   outline: 1px dashed @pink;
 }
+
 .form-photo__filter {
   position: relative;
   display: none;
@@ -140,6 +154,7 @@
     display: flex;
   }
 }
+
 .form-photo__filter-button-icon {
   fill: rgba(@dark-blue, 0.3);
   position: absolute;
@@ -151,11 +166,13 @@
     top: 13px;
     left: 0;
   }
+
   @media (min-width: @desktop-width) {
     top: 4px;
     left: 0;
   }
 }
+
 .form-photo__filter-button-icon--crop {
   width: 48px;
   height: 48px;
@@ -164,6 +181,7 @@
     width: 24px;
     height: 24px;
   }
+
   @media (min-width: @desktop-width) {
     width: 48px;
     height: 48px;
@@ -171,6 +189,7 @@
     margin-top: 1px;
   }
 }
+
 .form-photo__filter-button-icon--fill {
   margin-top: 2px;
   width: 48px;
@@ -181,12 +200,14 @@
     width: 24px;
     height: 24px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 30px;
     width: 48px;
     height: 48px;
   }
 }
+
 .form-photo__filter-button-icon--contrast {
   margin-top: 5px;
   width: 48px;
@@ -198,6 +219,7 @@
     width: 24px;
     height: 24px;
   }
+
   @media (min-width: @desktop-width) {
     width: 48px;
     height: 48px;
@@ -205,13 +227,16 @@
     margin-left: 6px;
   }
 }
+
 .form-photo__filter-button-icon:hover {
   fill: @dark-blue;
   cursor: pointer;
 }
+
 .form-photo__filter-button-icon--active {
   fill: @pink;
 }
+
 .form-photo__filter::after {
   content: "";
   position: absolute;
@@ -226,19 +251,21 @@
     width: 100%;
   }
 }
+
 .form-photo__filter--current {
   display: flex;
 }
-.form-photo__control {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-bottom: 28px;
 
-    &--crop {
-      display: block;
+.form-photo__control {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 28px;
+
+  &--crop {
+    display: block;
   }
 
   @media (min-width: @tablet-width) {
@@ -248,11 +275,13 @@
     padding-bottom: 0;
     width: 100%;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 50px;
     padding-right: 30px;
   }
 }
+
 .form-photo__range {
   position: relative;
   height: 14px;
@@ -290,6 +319,7 @@
     background-color: @pink;
   }
 }
+
 .form-photo__filter-range {
   margin-left: auto;
   width: 100%;
@@ -299,11 +329,13 @@
     margin-right: 18px;
     width: 202px;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 30px;
     width: 287px;
   }
 }
+
 .form-photo__buttons {
   @media (min-width: @desktop-width) {
     display: flex;
@@ -312,6 +344,7 @@
     padding-right: 0;
   }
 }
+
 .form-photo__button {
   font-family: inherit;
   font-weight: 700;
@@ -324,6 +357,7 @@
     margin-bottom: 26px;
     width: 260px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
     width: 45%;
