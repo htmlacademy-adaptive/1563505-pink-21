@@ -1,11 +1,11 @@
 .photo {
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     min-width: 300px;
   }
 }
+
 .photo--full {
   position: relative;
   overflow: hidden;
@@ -18,11 +18,13 @@
     width: auto;
     max-width: 700px;
   }
+
   @media (min-width: @desktop-width) {
     max-width: 1200px;
     padding-bottom: 22px;
   }
 }
+
 .photo__link {
   display: block;
   overflow: hidden;
@@ -35,11 +37,13 @@
     width: 300px;
     height: 300px;
   }
+
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 400px;
   }
 }
+
 .photo__link--full {
   position: relative;
   left: 50%;
@@ -52,12 +56,14 @@
     width: 700px;
     height: 509px;
   }
+
   @media (min-width: @desktop-width) {
     top: 1px;
     width: 1200px;
     height: 506px;
   }
 }
+
 .photo__link--full::before {
   content: "Панорама дня";
   position: absolute;
@@ -75,16 +81,19 @@
     top: 58px;
     right: 39px;
   }
+
   @media (min-width: @desktop-width) {
     top: 54px;
     right: 130px;
   }
 }
+
 .photo__image {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .photo__content {
   background-color: @silver;
   display: flex;
@@ -97,11 +106,14 @@
     padding: 21px 32px 24px 27px;
   }
 }
+
 .photo__content--full {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 280px;
+  padding: 18px 18px 20px;
+  padding-right: 0;
 
   @media (min-width: @tablet-width) {
     flex-flow: row wrap;
@@ -109,28 +121,33 @@
     padding: 44px 29px 13px 27px;
     width: 620px;
   }
+
   @media (min-width: @desktop-width) {
-    padding: 24px 32px 12px 27px;
+    padding: 25px 32px 12px 27px;
     width: 940px;
   }
 }
+
 .photo__author {
   margin: 0;
 }
+
 .photo__author-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   color: @dark-blue;
 }
+
 .photo__date {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
   color: @dark-blue;
-  margin-left: 5px;
+  margin-left: 1px;
 }
+
 .photo__text {
   font-weight: 400;
   font-size: 14px;
@@ -144,17 +161,27 @@
     min-height: 48px;
   }
 }
+
 .photo__text--full {
-  width: 243px;
+  width: 280px;
+
   @media (min-width: @tablet-width) {
     width: 600px;
     order: 2;
     min-height: auto;
   }
+
   @media (min-width: @desktop-width) {
     width: 940px;
   }
 }
+
+.photo__text--break {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .photo__likes {
   text-transform: uppercase;
   display: flex;
@@ -166,11 +193,13 @@
     justify-content: space-between;
   }
 }
+
 .photo__likes--full {
   @media (min-width: @tablet-width) {
     order: 1;
   }
 }
+
 .photo__like-button {
   display: block;
   padding: 0;
@@ -183,6 +212,7 @@
   background-size: contain;
   cursor: pointer;
 }
+
 .photo__like-count {
   font-weight: 400;
   font-size: 12px;

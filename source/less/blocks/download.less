@@ -19,35 +19,45 @@
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: -40px 72px;
     background-size: image-size("../img/iphone-hand-tablet@1x.png");
+
     @media @retina {
       background-image: url("../img/iphone-hand-tablet@2x.png");
     }
   }
-    @media (min-width: @desktop-width) {
-      margin: 0 auto;
-      width: 1200px;
-      max-width: 100%;
-      background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-position: 146px 96px;
-      background-size: image-size("../img/iphone-hand-desktop@1x.png");
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 46px 96px;
+    background-size: image-size("../img/iphone-hand-desktop@1x.png");
+
     @media @retina {
       background-image: url("../img/iphone-hand-desktop@2x.png");
     }
+
+    @media (min-width: @desctop-only) {
+      background-position: 146px 98px;
+    }
   }
 }
+
 .download__button-wrapper {
-  padding-top: 30px;
+  padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
   }
+
   @media (min-width: @desktop-width) {
     padding-top: 0;
     padding-left: 130px;
   }
 }
+
 .download__button {
   background-color: transparent;
   font-size: 18px;
@@ -64,8 +74,6 @@
   border-width: 3px;
   border-style: solid;
   border-radius: 30px;
-  line-height: 18px;
-  background-color: transparent;
   margin: 0 auto;
   max-width: 100%;
 
@@ -73,27 +81,33 @@
     width: 300px;
     margin: 0;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
     width: 300px;
   }
 }
+
 .download__button:hover {
   color: @pink;
   background-color: @white;
 }
+
 .download__button:active {
   color: fade(@pink, 30%);
 }
+
 .download__stores {
   background-color: @bg-dark-blue;
   font-size: 14px;
   line-height: 24px;
   color: @white;
+
   @media (min-width: @tablet-width) {
     background-color: transparent;
     margin: 0;
   }
+
   @media (min-width: @desktop-width) {
     background-color: transparent;
   }
