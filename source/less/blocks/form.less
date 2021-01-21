@@ -71,13 +71,13 @@
 }
 
 .form__achievments-wrapper {
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 4px;
   background-color: @silver;
 
   @media (min-width: @tablet-width) {
     order: 3;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 15px;
     background-color: @white;
   }
@@ -103,8 +103,8 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 1px;
-    padding-top: 10px;
-    padding-bottom: 55px;
+    padding-top: 7px;
+    padding-bottom: 60px;
     width: 100%;
   }
 }
@@ -115,7 +115,7 @@
 
   @media (min-width: @tablet-width) {
     order: 1;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-bottom: 28px;
     background-color: @white;
   }
@@ -206,13 +206,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 57px 8px 13px 58px;
+    padding: 54px 1px 10px 34px;
   }
 }
 
 .form__fieldset--contacts {
   @media (min-width: @tablet-width) {
-    padding: 46px 58px 3px;
+    padding: 43px 58px 8px;
   }
 
   @media (min-width: @desktop-width) {
@@ -227,22 +227,22 @@
   padding-right: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 52px 58px 35px;
+    padding: 52px 58px 38px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 54px 50px 48px 74px;
+    padding: 50px 50px 45px 74px;
     width: auto;
   }
 }
 
 .form__fieldset--emotions {
   @media (min-width: @tablet-width) {
-    padding: 46px 58px 51px;
+    padding: 43px 58px 51px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 43px 58px 43px;
+    padding: 40px 58px 43px;
   }
 }
 
@@ -270,7 +270,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 0;
   }
 }
@@ -350,7 +350,8 @@
   margin-bottom: 43px;
 
   @media (min-width: @desktop-width) {
-    width: 260px;
+    margin-bottom: 48px;
+    width: 270px;
 
     &:nth-child(2),
     &:nth-child(4),
@@ -362,6 +363,24 @@
     &:nth-child(5) {
       order: 1;
     }
+  }
+
+  @media (min-width: @wide-width) {
+    width: 280px;
+  }
+}
+
+.form__achivments-item--third,
+.form__achivments-item--forth {
+  @media (min-width: @desktop-width) {
+    width: 250px;
+  }
+}
+
+.form__achivments-item--fifth,
+.form__achivments-item--sixth {
+  @media (min-width: @desktop-width) {
+    width: 243px;
   }
 }
 
@@ -436,7 +455,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 135px;
+    padding-right: 148px;
   }
 }
 
@@ -462,7 +481,7 @@
     width: 400px;
     position: absolute;
     z-index: 5;
-    left: 270px;
+    left: 265px;
     top: 0;
     transform: translateY(-50%);
     padding: 0;
@@ -555,8 +574,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 1px;
-    padding-left: 60px;
+    padding-top: 0;
+    padding-left: 58px;
   }
 }
 
@@ -600,6 +619,10 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 6px;
   }
 
   &:hover::before {
